@@ -314,11 +314,6 @@ public abstract class StatementBlock extends VBox implements CodeBlock, ElementI
         }
     }
 
-    public void clear(){
-        parameters.clear();
-        syntaxBox.getChildren().clear();
-    }
-
     @Override
     public void delete() {
         UndoManager.capture();
@@ -385,11 +380,6 @@ public abstract class StatementBlock extends VBox implements CodeBlock, ElementI
     @Override
     public List<BlockParameter> getParameters() {
         return parameters;
-    }
-
-    @Override
-    public void initParameters(int length) {
-
     }
 
     @Override
